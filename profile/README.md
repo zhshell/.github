@@ -1,10 +1,10 @@
 # zhsh
 
-一个基于 AI-Native 理念开发的面向 Homelab 和个人服务器轻度运维领域开发的自然语言增强 Shell，适合对 Linux 和 command line language 具备一定一定了解的人在非生产、非敏感环境下使用。  
+一个基于 AI-Native 理念开发的面向 Homelab 和个人服务器轻度运维领域开发的自然语言增强 Shell，适合对 Linux 和 command line language 具备一定了解的人在非生产、非敏感环境下使用。  
 
 zhsh 目前安装包约为 `1.7M`，编译后本体仅约 `4M`，适合 Homelab 等受限环境下使用最基本的 LLM 增强能力。  
 
-> 需要服务器本身支持连接外网
+> 需要服务器本身支持连接网络，至少要保证与 LLM Provider 之间网络通畅
 
 
 ## 能力
@@ -28,5 +28,7 @@ Open Claw、Workbuddy、Deepseek Harness 等长程任务能力。
 由于目前软件生态限制，如果某个服务器需要远程开发或者远程自动化，不要将 zhsh 设置为默认 shell。
 
 ## 请求格式及安全性设计
-
-见zhcodec项目和 zhsh-safety 项目。
+- [zhsh-safety](https://github.com/zhshell/zhsh-safety)：静默执行的安全规则
+- [zhcodec-sdk](https://github.com/zhshell/zhcodec-sdk)：请求风格转换 SDK
+  - [zhcodec-openai](https://github.com/zhshell/zhcodec-openai)：openai 风格的请求转换
+  - [zhcodec-anthropic](https://github.com/zhshell/zhcodec-anthropic)：anthropic 风格的请求转换
